@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.so
+*.pyd
+*.cpp
+
+# cython file
+c_ext/pp_c2.c
+
+# Build artifacts
+build/
+dist/
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+
+# Environments
+.env/
+.venv/
+.micromamba/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tests
+.pytest_cache/

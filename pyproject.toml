@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61", "wheel", "cython", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HAMRpostprocessing"
+version = "0.1.0"
+description = "Minimal working example for HAMR postprocessing."
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["numpy"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["HAMRpostprocessing"]
