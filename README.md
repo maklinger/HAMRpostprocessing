@@ -6,7 +6,7 @@ To install:
 Or in edible mode:
 ```
 # Clone the repo
-git clone https://github.com/yourusername/HAMRpostprocessing.git
+git clone https://github.com/maklinger/HAMRpostprocessing.git
 cd HAMRpostprocessing
 
 # Install in editable mode
