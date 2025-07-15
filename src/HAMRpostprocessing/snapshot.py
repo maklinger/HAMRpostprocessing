@@ -1,3 +1,6 @@
+
+# class that holds the grid with the H-AMR data
+
 import numpy as np
 import os
 import pathlib
@@ -9,9 +12,6 @@ import pp_c2
 #     from c_ext.build_c_extensions import build_pp_c
 #     build_pp_c()
 #     import pp_c
-
-
-
 
 
 
@@ -498,7 +498,7 @@ class Snapshot:
                         print("Dump file %d in folder %d doesn't exist" %(count,self.dump_nr))
             flag = 0
 
-
+        # Subhrat's pp_c
         pp_c2.rdump_griddata(
             flag, self.interpolate_var, 
             np.int32(self.RAD_M1),np.int32(self.RESISTIVE), np.int32(self.DOTRACER), 
@@ -522,6 +522,7 @@ class Snapshot:
             self.x1, self.x2, self.x3, self.i_min, self.i_max, self.j_min, self.j_max, 
             self.z_min, self.z_max)
 
+        # Leon's pp_c
         # pp_c.rdump_griddata(
         #     flag, self.interpolate_var, np.int32(self.RAD_M1), 
         #     np.int32(self.RESISTIVE), np.int32(self.TWO_T), np.int32(self.P_NUM),

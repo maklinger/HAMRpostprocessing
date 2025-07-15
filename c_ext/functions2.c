@@ -748,7 +748,7 @@ float a, float gam, float* Rdot, float* bsq, float* r, float startx1, float star
             else sprintf(filename2, "/dumps%d/new_dump%d", dump, u);
             sprintf(filename1, directory);
             strcat(filename1,filename2);
-            fprintf(stderr,"Reading file: %s \n", filename1);
+            // fprintf(stderr,"Reading file: %s \n", filename1);
             if(access(filename1, 0 ) != -1 ) {
                 fin = fopen(filename1, "rb");
                 fseek(fin, 0L, SEEK_END);
@@ -793,7 +793,6 @@ float a, float gam, float* Rdot, float* bsq, float* r, float startx1, float star
 
                                     if(export_raytracing==1){
                                         float volume=(float)(f1*f2*f3);
-                                        fprintf(stderr,"Reading rho at: %d \n", index_3D);
                                         rho[index_3D]+=trash[0]/volume;
                                         ug[index_3D]+=trash[1]/volume;
                                         for(ii=0;ii<3;ii++) B[(ii+1)*gridsize_3D+index_3D]+=trash[6+ii]/volume;
